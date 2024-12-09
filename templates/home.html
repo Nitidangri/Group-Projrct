@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Dataset - Home</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .background-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .background-container::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Gym Background */
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px); 
+            z-index: -1;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 3em;
+            color: #fff;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); 
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .button-container a {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 25px;
+            font-size: 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+
+        .about-btn {
+            background-color: #008CBA;
+        }
+
+        .about-btn:hover {
+            background-color: #007bb5;
+        }
+
+        .data-btn {
+            background-color: #f39c12;
+        }
+
+        .data-btn:hover {
+            background-color: #e67e22;
+        }
+
+        .course-info {
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 30px;
+            margin-top: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            font-family: 'Verdana', sans-serif;
+        }
+
+        .course-info h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #f39c12;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .course-info p {
+            font-size: 1.3em;
+            margin: 10px 0;
+            color: #fff;
+            font-style: italic;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .course-info ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.3em;
+            margin-top: 20px;
+        }
+
+        .course-info ul li {
+            margin: 5px 0;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .course-info ul li:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+            transition: color 0.3s, transform 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container"></div> 
+
+    <h1>Welcome to the Gym Dataset</h1>
+
+    <div class="course-info">
+        <p><strong>Subject:</strong> <span style="color: #f39c12; font-weight: bold;">Introduction to Python (DAB111)</span></p>
+        <p><strong>Professor:</strong> <span style="font-style: italic; color: #8e44ad;">Simranjeet Kaur</span></p>
+        
+        <h3>Group 8</h3>
+        <p><strong>Group Members:</strong></p>
+        <ul>
+            <li>Niti</li>
+            <li>Sakshi</li>
+            <li>Rupinder</li>
+            <li>Riya</li>
+        </ul>
+    </div>
+
+    <div class="button-container">
+        <a href="/about" class="about-btn">
+            <img src="https://img.icons8.com/ios/452/info.png" alt="About" style="width:30px; vertical-align: middle; margin-right: 10px;"> About
+        </a>
+        <a href="/data" class="data-btn">
+            <img src="https://img.icons8.com/ios/452/barbell.png" alt="Data" style="width:30px; vertical-align: middle; margin-right: 10px;"> View Data
+        </a>
+    </div>
+</body>
+</html>

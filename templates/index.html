@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Gym Dataset</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 50px;
+            font-size: 3em;
+            color: #333;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+        }
+
+        .content-container {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #f39c12;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .variables-list {
+            font-size: 1.1em;
+            line-height: 1.6em;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .variables-list li {
+            padding: 5px 0;
+        }
+
+        .variables-list li strong {
+            color: #f39c12;
+        }
+
+        .back-btn {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            background-color: #008CBA;
+            color: white;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+            background-color: #007bb5;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            p, .variables-list {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>About the Gym Dataset</h1>
+
+    <div class="content-container">
+        <h2>Dataset Overview</h2>
+        <p>This dataset contains valuable information about gym workouts, helping you track and analyze various health-related metrics. It includes data from individuals of different ages, genders, and experience levels, covering their workout performance and health statistics.</p>
+
+        <h2>Variables Description</h2>
+        <ul class="variables-list">
+            <li><strong>Age:</strong> Age of the individual. This helps analyze how age impacts workout performance and health metrics.</li>
+            <li><strong>Gender:</strong> Gender of the individual. Gender differences can be important when analyzing heart rate, workout frequency, and calorie burning.</li>
+            <li><strong>Weight (kg):</strong> Weight of the individual in kilograms. This variable is crucial in calculating calorie expenditure and understanding fitness progress.</li>
+            <li><strong>Height (m):</strong> Height of the individual in meters. Height is essential for calculating the Body Mass Index (BMI) and analyzing body composition.</li>
+            <li><strong>Max_BPM:</strong> Maximum beats per minute reached during the workout. This value shows the highest heart rate during physical activity, which helps assess cardiovascular fitness.</li>
+            <li><strong>Avg_BPM:</strong> Average beats per minute during the workout. This provides insights into the intensity of the workout and overall cardiovascular health.</li>
+            <li><strong>Resting_BPM:</strong> Resting beats per minute, typically measured when the individual is at rest. This is a good indicator of overall cardiovascular health, with lower resting heart rates typically indicating better fitness.</li>
+            <li><strong>Session_Duration (hours):</strong> Duration of the workout session in hours. This variable is important for tracking workout intensity and understanding how long individuals typically engage in workouts.</li>
+            <li><strong>Calories_Burned:</strong> Number of calories burned during the session. This metric is used to assess energy expenditure during workouts and helps with fitness goals like weight loss or maintenance.</li>
+            <li><strong>Workout_Type:</strong> Type of workout (e.g., Strength, Cardio, etc.). This helps categorize workouts, making it easier to analyze specific types of exercises and their impact on health metrics.</li>
+            <li><strong>Fat_Percentage:</strong> Body fat percentage of the individual. This is a critical metric for assessing body composition, and tracking changes in fat percentage can be a sign of progress in fitness.</li>
+            <li><strong>Water_Intake (liters):</strong> Amount of water consumed (in liters). Hydration plays a vital role in workout performance and recovery, and tracking water intake can be valuable for optimizing fitness routines.</li>
+            <li><strong>Workout_Frequency (days/week):</strong> Number of days per week the individual works out. This metric helps in understanding how often individuals exercise and can be correlated with fitness outcomes like calories burned and workout performance.</li>
+            <li><strong>Experience_Level:</strong> Experience level of the individual (e.g., Beginner, Intermediate, Advanced). This variable helps categorize users based on their fitness journey and may influence other factors like workout intensity, duration, and recovery.</li>
+            <li><strong>BMI:</strong> Body Mass Index of the individual, calculated using height and weight. BMI is a commonly used indicator to assess if an individual is underweight, normal weight, overweight, or obese.</li>
+        </ul>
+
+        <h2>Additional Insights</h2>
+        <p>This dataset can be used to analyze different health and fitness trends. For example:</p>
+        <ul class="variables-list">
+            <li><strong>Workout Frequency:</strong> How the number of days worked out per week impacts calories burned or workout performance.</li>
+            <li><strong>Max_BPM & Avg_BPM:</strong> Understanding the relationship between heart rate and workout intensity.</li>
+            <li><strong>Experience Level:</strong> How individuals at different experience levels perform during workouts.</li>
+        </ul>
+
+        <a href="/" class="back-btn">Back to Home</a>
+    </div>
+
+</body>
+</html>
